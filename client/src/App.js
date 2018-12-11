@@ -13,6 +13,7 @@ class App extends Component {
   state = { 
     checkout: {},
     product: {},
+    coupon: 0,
   }
 
   componentDidMount() {
@@ -24,8 +25,22 @@ class App extends Component {
     const { product, checkout } = await CheckoutService.getCheckOutById(id)
       .then(response => response.data)
 
-    this.setState({ checkout, product })
-    console.log(checkout)
+    this.setState({ checkout, product, coupon: 0 })
+  }
+
+  async updatedTotalPriceCheckout(couponId) {
+    const id = '6544'
+    const { product, checkout } = await CheckoutService.updateTotalPriceCheckOutById(id, { couponId })
+      .then(response => response.data)
+    const { discount } = checkout.availableCoupons.find(c => c.id === couponId)
+    this.setState({ checkout, product, coupon: discount })
+  }
+
+  handleSelectCoupon = (couponId) => {
+    if(!couponId) {
+      return this.getCheckout()
+    }
+    return this.updatedTotalPriceCheckout(couponId)
   }
 
   render() {
@@ -33,7 +48,12 @@ class App extends Component {
       <div className="l-main">
       <Header />
       <Hero productImage={this.state.product.image}/>
-      <Content productPrice={this.state.product.price} checkout={this.state.checkout}/>
+      <Content 
+        onClick={this.handleSelectCoupon} 
+        productPrice={this.state.product.price} 
+        checkout={this.state.checkout}
+        coupon={this.state.coupon}
+      />
       <Footer />
     </div>
     );
