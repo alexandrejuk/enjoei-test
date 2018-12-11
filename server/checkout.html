@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  color: #5b5855;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.l-main {
+  font-family: "Montserrat", sans-serif;
+}
+
+.l-header {
+  text-align: center;
+  border-bottom: 0.15em solid #f4f2f0;
+}
+
+.logo > img {
+  width: 52px;
+  height: auto;
+}
+
+.l-hero {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.l-product {
+  width: 40%;
+}
+
+.l-content {
+  padding: 14px;
+}
+
+.title {
+  padding: 20px 0 5px 0;
+}
+
+.l-coupons > li, .l-order-detail > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 10px 0;
+}
+
+.l-footer {
+  border-top: 0.15em solid #f4f2f0;
+  padding: 14px 0;
+  text-align: center;
+}
+
+.cancel-button, .agree-button {
+  width: calc((100vw - 40px) / 2);
+  height: 48px;
+  border-radius: 3px;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+  border: 0.1em solid #f4f2f0;
+  cursor: pointer;
+}
+
+.agree-button {
+  background: #f77274;
+  border: 0.1em solid #f77274;
+}
+
+.cancel-button:focus, .agree-button:focus {
+  outline: none;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.primary {
+  color: #f77274;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 0.1em solid #e4e1df;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f77274;
+}
+</style>
+</head>
+
+<body>
+  <div class="l-main">
+    <div class="l-header">
+      <div class="logo">
+        <img src="https://pbs.twimg.com/profile_images/989824346607714305/iykqbmjw_400x400.jpg" alt="logo">
+      </div>
+    </div>
+    <div class="l-hero">
+      <img class="l-product" src="https://ae01.alicdn.com/kf/HTB1aN.kKFXXXXarXXXXq6xXFXXX5/Entrega-r-pida-Novo-2015-roupas-da-menina-das-crian-as-vestido-de-crian-a-e.jpg"
+        alt="product-item">
+    </div>
+    <div class="l-content">
+      <h3 class="title text-bold">cupons</h3>
+      <ul class="l-coupons">
+        <li>
+
+          <label class="container">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            não usar cupom
+          </label>
+
+        </li>
+        <li>
+          <label class="container">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            black friday
+          </label>
+          <span class="primary">- R$ 12,00</span>
+        </li>
+      </ul>
+      <h3 class="title text-bold">resumo</h3>
+      <ul class="l-order-detail">
+        <li>valor original <span>R$ 100,00</span></li>
+        <li>cupom <span class="primary">- R$ 12,00</span></li>
+        <li>frete <span>R$ 20,00</span></li>
+        <li>total <span class="text-bold">R$ 108,00</span></li>
+      </ul>
+    </div>
+    <div class="l-footer">
+      <button class="cancel-button primary">cancelar</button>
+      <button class="agree-button">confirmar</button>
+    </div>
+  </div>
+</body>
+
+</html>
