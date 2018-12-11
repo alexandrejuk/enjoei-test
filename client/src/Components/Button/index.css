@@ -1,0 +1,26 @@
+.button {
+	width: calc((100vw - 40px) / 2);
+	height: 48px;
+	border-radius: 3px 3px 4px 4px;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	border: 1px solid #e4e1df;
+	border-bottom: 2px solid #d1cdca;
+}
+
+.agree-button {
+	background: #f05b78;
+	border: 1px solid #f05b78;
+	border-bottom: 2px solid #d25069;
+	margin-left: 10px;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.primary {
+	color: #f05b78;
+}

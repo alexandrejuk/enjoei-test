@@ -3,28 +3,3 @@
   padding: 14px 0;
   text-align: center;
 }
-
-.cancel-button, .agree-button {
-  width: calc((100vw - 40px) / 2);
-  height: 48px;
-  border-radius: 3px;
-  font-size: 1em;
-  color: #fff;
-  font-weight: 600;
-  border: 0.1em solid #f4f2f0;
-  cursor: pointer;
-}
-
-.agree-button {
-  background: #f77274;
-  border: 0.1em solid #f77274;
-  margin-left: 10px;
-}
-
-.cancel-button:focus, .agree-button:focus {
-  outline: none;
-}
-
-.primary {
-  color: #f77274;
-}

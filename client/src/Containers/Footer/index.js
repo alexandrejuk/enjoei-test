@@ -1,10 +1,11 @@
 import React from 'react'
 import './index.css'
+import Button from '../../Components/Button'
 
 const Footer = () => (
   <div className="l-footer">
-    <button className="cancel-button primary">cancelar</button>
-    <button className="agree-button">confirmar</button>
+    <Button name="cancelar" classStyle="primary"/>
+    <Button name="confirmar" classStyle="agree-button"/>
   </div>
 )
 
