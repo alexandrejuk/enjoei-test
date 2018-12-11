@@ -1,0 +1,9 @@
+.l-header {
+	text-align: center;
+	border-bottom: 0.15em solid #f4f2f0;
+}
+
+.logo > img {
+	width: 52px;
+	height: auto;
+}
