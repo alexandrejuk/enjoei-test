@@ -18,6 +18,7 @@
 .agree-button {
   background: #f77274;
   border: 0.1em solid #f77274;
+  margin-left: 10px;
 }
 
 .cancel-button:focus, .agree-button:focus {
