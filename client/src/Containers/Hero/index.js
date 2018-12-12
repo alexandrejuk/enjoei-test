@@ -7,7 +7,7 @@ const Hero = ({ productImage }) => (
       className="l-product" 
       src={productImage}
       alt="product-item"
-      />
+    />
   </div>
 )
 
