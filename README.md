@@ -1,5 +1,5 @@
 # Test Front end Enjoei! =)
-Teste técnico de Front para a empresa Enjoei, desenvolvido com ReactJS, toda parte de designer foi com o matérial disponível em server resource, a primeira demo do design foi criada no code.pen, veja a demo neste [clicando aqui!](https://codepen.io/alexandrejuk/pen/ZVGzqr).
+Teste técnico de Front para a empresa Enjoei, desenvolvido com ReactJS, toda parte de designer foi com o matérial disponível em server resource, a primeira demo do design foi criada no code.pen, veja a demo [clicando aqui!](https://codepen.io/alexandrejuk/pen/ZVGzqr)
 
 # Requerido
 * ReactJS
