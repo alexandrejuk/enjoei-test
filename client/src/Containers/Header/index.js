@@ -1,10 +1,10 @@
 import React from 'react'
 import './index.css'
-
+import Logo from '../../assets/icon/logo.jpg'
 const Header = () => (
   <div className="l-header">
     <div className="logo">
-      <img src="https://pbs.twimg.com/profile_images/989824346607714305/iykqbmjw_400x400.jpg" alt="logo" />
+      <img src={Logo} alt="logo" />
     </div>
   </div>
 )
